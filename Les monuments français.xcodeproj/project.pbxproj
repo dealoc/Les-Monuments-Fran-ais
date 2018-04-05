@@ -13,6 +13,7 @@
 		205675B920764817003144BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205675B820764817003144BA /* Assets.xcassets */; };
 		205675BC20764817003144BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205675BA20764817003144BA /* LaunchScreen.storyboard */; };
 		205675C72076485E003144BA /* CarteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675C62076485E003144BA /* CarteController.swift */; };
+		205675C920764CBA003144BA /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675C820764CBA003144BA /* CLLocationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		205675BB20764817003144BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205675BD20764817003144BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205675C62076485E003144BA /* CarteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteController.swift; sourceTree = "<group>"; };
+		205675C820764CBA003144BA /* CLLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				205675C62076485E003144BA /* CarteController.swift */,
+				205675C820764CBA003144BA /* CLLocationExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				205675B720764816003144BA /* Les_monuments_franc_ais.xcdatamodeld in Sources */,
+				205675C920764CBA003144BA /* CLLocationExtension.swift in Sources */,
 				205675C72076485E003144BA /* CarteController.swift in Sources */,
 				205675AF20764816003144BA /* AppDelegate.swift in Sources */,
 			);
