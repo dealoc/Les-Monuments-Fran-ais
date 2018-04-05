@@ -15,6 +15,9 @@
 		205675C72076485E003144BA /* CarteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675C62076485E003144BA /* CarteController.swift */; };
 		205675C920764CBA003144BA /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675C820764CBA003144BA /* CLLocationExtension.swift */; };
 		205675CB207657F9003144BA /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675CA207657F9003144BA /* Monument.swift */; };
+		205675CD20765C37003144BA /* MonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675CC20765C37003144BA /* MonAnnotation.swift */; };
+		205675CF20765FA1003144BA /* MonGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675CE20765FA1003144BA /* MonGeocoder.swift */; };
+		205675D1207662A1003144BA /* AnnotationVue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675D0207662A1003144BA /* AnnotationVue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		205675C62076485E003144BA /* CarteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteController.swift; sourceTree = "<group>"; };
 		205675C820764CBA003144BA /* CLLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		205675CA207657F9003144BA /* Monument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
+		205675CC20765C37003144BA /* MonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotation.swift; sourceTree = "<group>"; };
+		205675CE20765FA1003144BA /* MonGeocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonGeocoder.swift; sourceTree = "<group>"; };
+		205675D0207662A1003144BA /* AnnotationVue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationVue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 		205675C420764842003144BA /* Vue */ = {
 			isa = PBXGroup;
 			children = (
+				205675D0207662A1003144BA /* AnnotationVue.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -93,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				205675CA207657F9003144BA /* Monument.swift */,
+				205675CC20765C37003144BA /* MonAnnotation.swift */,
+				205675CE20765FA1003144BA /* MonGeocoder.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -169,8 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				205675B720764816003144BA /* Les_monuments_franc_ais.xcdatamodeld in Sources */,
+				205675D1207662A1003144BA /* AnnotationVue.swift in Sources */,
 				205675CB207657F9003144BA /* Monument.swift in Sources */,
+				205675CF20765FA1003144BA /* MonGeocoder.swift in Sources */,
 				205675C920764CBA003144BA /* CLLocationExtension.swift in Sources */,
+				205675CD20765C37003144BA /* MonAnnotation.swift in Sources */,
 				205675C72076485E003144BA /* CarteController.swift in Sources */,
 				205675AF20764816003144BA /* AppDelegate.swift in Sources */,
 			);
