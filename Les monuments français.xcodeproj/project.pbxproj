@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		205675AF20764816003144BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675AE20764816003144BA /* AppDelegate.swift */; };
-		205675B120764816003144BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675B020764816003144BA /* ViewController.swift */; };
 		205675B420764816003144BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205675B220764816003144BA /* Main.storyboard */; };
 		205675B720764816003144BA /* Les_monuments_franc_ais.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 205675B520764816003144BA /* Les_monuments_franc_ais.xcdatamodeld */; };
 		205675B920764817003144BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205675B820764817003144BA /* Assets.xcassets */; };
 		205675BC20764817003144BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205675BA20764817003144BA /* LaunchScreen.storyboard */; };
+		205675C72076485E003144BA /* CarteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675C62076485E003144BA /* CarteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		205675AB20764816003144BA /* Les monuments français.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Les monuments français.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		205675AE20764816003144BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		205675B020764816003144BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		205675B320764816003144BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		205675B620764816003144BA /* Les_monuments_franc_ais.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Les_monuments_franc_ais.xcdatamodel; sourceTree = "<group>"; };
 		205675B820764817003144BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		205675BB20764817003144BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205675BD20764817003144BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205675C62076485E003144BA /* CarteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,10 @@
 		205675AD20764816003144BA /* Les monuments français */ = {
 			isa = PBXGroup;
 			children = (
+				205675C520764847003144BA /* Modele */,
+				205675C420764842003144BA /* Vue */,
+				205675C32076483D003144BA /* Controller */,
 				205675AE20764816003144BA /* AppDelegate.swift */,
-				205675B020764816003144BA /* ViewController.swift */,
 				205675B220764816003144BA /* Main.storyboard */,
 				205675B820764817003144BA /* Assets.xcassets */,
 				205675BA20764817003144BA /* LaunchScreen.storyboard */,
@@ -65,6 +67,28 @@
 				205675B520764816003144BA /* Les_monuments_franc_ais.xcdatamodeld */,
 			);
 			path = "Les monuments français";
+			sourceTree = "<group>";
+		};
+		205675C32076483D003144BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				205675C62076485E003144BA /* CarteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		205675C420764842003144BA /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		205675C520764847003144BA /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modele;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205675B120764816003144BA /* ViewController.swift in Sources */,
 				205675B720764816003144BA /* Les_monuments_franc_ais.xcdatamodeld in Sources */,
+				205675C72076485E003144BA /* CarteController.swift in Sources */,
 				205675AF20764816003144BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dealoc.Les-monuments-franc-ais";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dealoc.Morpion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dealoc.Les-monuments-franc-ais";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dealoc.Morpion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
