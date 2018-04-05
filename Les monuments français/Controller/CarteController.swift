@@ -26,6 +26,8 @@ class CarteController: UIViewController {
         obtenirDonneesDepuisJSON()
     }
     
+    
+    
     func obtenirDonneesDepuisJSON() {
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -33,7 +35,10 @@ class CarteController: UIViewController {
             do {
                 self.monuments = try JSONDecoder().decode([Monument].self, from: data!)
                 for monument in self.monuments {
-                    print(monument.name)
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = CLLocationCoordinate2D(latitude: Double(monument.latitude!)!, longitude: Double(monument.longitude!)!)
+                    annotation.title = monument.name ?? "Pas de nom"
+                    self.carte.addAnnotation(annotation)
                 }
                 
             } catch {
